@@ -61,6 +61,18 @@ description:
 
 由第一数学归纳法，$Q(n)$ 对所有自然数 $n$ 成立。从而命题 $P(n)$ 对所有自然数 $n$ 成立。
 
+![例 1.1](https://tupian.jinng.cn/20230619/li-1.1.png)
+
+![例 1.2](https://tupian.jinng.cn/20230619/li-1.2.png)
+
+![例 1.3](https://tupian.jinng.cn/20230619/li-1.3-1.png)
+
+![例 1.3](https://tupian.jinng.cn/20230619/li-1.3-2.png)
+
+![例 1.4](https://tupian.jinng.cn/20230619/li-1.4.png)
+
+![例 1.5](https://tupian.jinng.cn/20230619/li-1.5.png)
+
 ### 最小数原理
 自然数集 $\mathbb{N}$ 的任一个非空子集必有最小元。
 
@@ -99,3 +111,15 @@ $$p=\sqrt{p^2}\leq \sqrt{pq}=\sqrt{m}\leq \sqrt{N}$$
 任何大于 $1$ 的整数 $n$ 可表示成有限个（可重复）素数的乘积。当不考虑乘积中因子的顺序时这种分解是唯一的。
 
 根据以上定理，大于 $1$ 的整数 $n$ 可以唯一地表示为 ${p_1}^{\alpha_1}\cdot \cdots \cdot {p_r}^{\alpha_r}$ 的形式，其中 $p_1 <\cdots <p_r$ 为不同素数，$\alpha_1,\cdots ,\alpha_r$ 为整数。
+
+![例 2.1](https://tupian.jinng.cn/20230619/li-2.1.png)
+
+![例 2.2](https://tupian.jinng.cn/20230619/li-2.2.png)
+
+![例 2.3](https://tupian.jinng.cn/20230619/li-2.3.png)
+
+![例 2.4](https://tupian.jinng.cn/20230619/li-2.4.png)
+
+![例 2.5](https://tupian.jinng.cn/20230619/li-2.5.png)
+
+![例 2.6](https://tupian.jinng.cn/20230619/li-2.6.png)
