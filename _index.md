@@ -2,23 +2,12 @@
 description: “你好，我是周鲸鱼/鲸鱼/Tseu Jinng/Jinng/Zhou Jingyu/Jingyu，这里是我的树洞。”
 ---
 
-### 我
 ![Tseu Jinng](https://tupian.jinng.cn/tesujinng.webp)
-
-你好，我是鲸鱼 o/ 除了鲸鱼，我还可能会使用很多名字，包括周鲸鱼/Tseu Jinng/Zhou Jingyu/Jinng/Jingyu/……
-
-我喜欢电子产品/画画/钢笔/Minecraft/……
-
-目前就读于大连理工大学。
+### 我
+你好，我是鲸鱼 o/ 除了鲸鱼，我还可能会使用很多名字，包括周鲸鱼/Tseu Jinng/Zhou Jingyu/Jinng/Jingyu/……我喜欢电子产品/画画/钢笔/Minecraft/……目前就读于大连理工大学。
 
 #### 找到我
-[Github](https://github.com/tseujinng)
-
-[知乎](https://www.zhihu.com/people/ran-62-79)
-
-[哔哩哔哩](https://space.bilibili.com/71607461)
-
-[Steam](https://steamcommunity.com/id/zhoujingyu04/)
+[Github](https://github.com/tseujinng) | [知乎](https://www.zhihu.com/people/ran-62-79) | [哔哩哔哩](https://space.bilibili.com/71607461) | [Steam](https://steamcommunity.com/id/zhoujingyu04/)
 
 #### 联系我
 ｔｅｓｕ＠ｊｉｎｎｇ．ｃｎ
