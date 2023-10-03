@@ -5,12 +5,12 @@ tags:
 description: "Debian 11 终于发布。我在尝鲜时记录下了我的操作，供你参考。"
 ---
 
-Debian 11 "bullseye" 按照计划将于今天发布。在此记录一下配置的过程。  
+Debian 11 "bullseye" 按照计划将于今天发布。在此记录一下配置的过程。
 我的网卡是 rtl8822ce ，需要「包含了非自由固件的非官方的镜像」。在昨天的「每日构建」中已经有了「包含了非自由固件的非官方的镜像」，因此我昨天安装了这一版本。
 
 ## 基础配置
 ### 配置用户 sudo 权限
-Debian 在安装时创建的非管理员用户并没有 sudo 权限。为了便于操作，需要为其添加 sudo 权限。  
+Debian 在安装时创建的非管理员用户并没有 sudo 权限。为了便于操作，需要为其添加 sudo 权限。
 切换到 root 用户：
 
 ```
@@ -51,7 +51,7 @@ sudo apt upgrade
 ```
 
 ### 安装专有驱动
-如果你像我一样使用了「包含了非自由固件的非官方的镜像」（这名字真绕口）安装，那么你大概不缺专有驱动。但如果你使用「较庞大的完整安装映像」（这名字也挺绕口）安装，你大概缺驱动。我之后使用「较庞大的完整安装映像」重装了系统，就遇到了缺少驱动的问题。由于我们的硬件并不相同，解决办法也不尽相同。我的 CPU 是 AMD Ryzen 3500U ，集显是 Radeon Vega 8 ，网卡是 Realtek rtl8822ce 。参考「[软件包：firmware-amd-graphics](https://packages.debian.org/bullseye/kernel/firmware-amd-graphics)」、「[软件包：firmware-realtek](https://packages.debian.org/bullseye/firmware-realtek)」。如果你能在这两个页面中找到你的硬件，那么你的解决方法大概和我一样。 `firmware-realtek` 中有 `rtl8822c` 的驱动，但没有 `rtl8822ce` 的驱动，我在搜索这个问题时得到的答案明确指出这个软件包不能给 `rtl8822ce` 使用。**但是**，事实证明 `rtl8822ce` 用的就是 `rtl8822c` 的驱动，直接装 `firmware-realtek` 就解决了。至于 `rtl8822ce` 和`rtl8822c` 有什么区别，**大概**是生产批次不同？
+如果你像我一样使用了「包含了非自由固件的非官方的镜像」（这名字真绕口）安装，那么你大概不缺专有驱动。但如果你使用「较庞大的完整安装映像」（这名字也挺绕口）安装，你大概缺驱动。我之后使用「较庞大的完整安装映像」重装了系统，就遇到了缺少驱动的问题。由于我们的硬件并不相同，解决办法也不尽相同。我的 CPU 是 AMD Ryzen 3500U ，集显是 Radeon Vega 8 ，网卡是 Realtek rtl8822ce 。参考「[软件包：firmware-amd-graphics](https://packages.debian.org/bullseye/kernel/firmware-amd-graphics)」、「[软件包：firmware-realtek](https://packages.debian.org/bullseye/firmware-realtek)」。如果你能在这两个页面中找到你的硬件，那么你的解决方法大概和我一样。 `firmware-realtek` 中有 `rtl8822c` 的驱动，但没有 `rtl8822ce` 的驱动，我在搜索这个问题时得到的答案明确指出这个软件包不能给 `rtl8822ce` 使用。**但是**，事实证明 `rtl8822ce` 用的就是 `rtl8822c` 的驱动，直接装 `firmware-realtek` 就解决了。至于 `rtl8822ce` 和 `rtl8822c` 有什么区别，**大概**是生产批次不同？
 
 要解决显卡和网卡驱动问题，只需要用数据线连接安卓手机，在手机设置中开启通过 USB 共享网络，然后执行：
 
@@ -89,7 +89,7 @@ UUID=XXXXX    /挂载目录 ext4 defaults 0 0
 
 ## 额外配置
 ### 配置中文输入法
-Debian 默认安装了 `fcitx5` 和`ibus` ~~因此配置非常简单~~。
+Debian 默认安装了 `fcitx5` 和 `ibus` ~~因此配置非常简单~~。
 
 终端执行：
 

@@ -10,7 +10,7 @@ description: "这篇文章已经没有意义，请不要参考这篇翻译。请
 
 ------
 
-这篇文章已经没有意义，请不要参考这篇翻译。请移步 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)  或者 [约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0/) 。
+这篇文章已经没有意义，请不要参考这篇翻译。请移步 [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) 或者 [约定式提交](https://www.conventionalcommits.org/zh-hans/v1.0.0/) 。
 
 ------
 
@@ -43,18 +43,18 @@ description: "这篇文章已经没有意义，请不要参考这篇翻译。请
 - **chore** （构建过程或辅助工具的变动）
 
 #### 允许的 <范围>
-描述了改动影响的范围。在 Angular，可以是 $location，$browser 等。  
+描述了改动影响的范围。在 Angular，可以是 $location，$browser 等。
 如果改动的内容很多，可以用 * 来表示。
 
 #### <概括> 文本
-这是对于更改的简单概括。  
+这是对于更改的简单概括。
 - 以动词开头，使用第一人称现在时，例如，使用 change 而不是 changed 或 changes。
 - 首字母无需大写 。
 - 结尾无需添加句号（.）。
 
 #### 消息 <主体>
 - 像上面那样，以动词开头，使用第一人称现在时，例如，使用 change 而不是 changed 或 changes。
-- 需要包含修改动机、修改前后的对比。 
+- 需要包含修改动机、修改前后的对比。
 
 #### 消息<注脚>
 ##### 不兼容变更

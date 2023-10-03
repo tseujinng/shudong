@@ -91,7 +91,7 @@ $${\lim_{x\to+\infty}a_n}=a$$
 ### 例题
 证明：${\lim_{n\to+\infty}n^{\frac{1}{n}}}=a$
 
-利用**几何平均-算术不等式**，得到
+利用**几何平均 - 算术不等式**，得到
 
 $$1\leq{n^{\frac{1}{n}}}=\left(\underbrace{1\cdots1}_{n-2个}\sqrt{n}\sqrt{n}\right)^{\dfrac{1}{n}}\leq{\dfrac{\left(n-2\right)-2\sqrt{n}}{n}}=1+\dfrac{2\left(\sqrt{n}-1\right)}{n}$$
 
@@ -111,14 +111,14 @@ $$a-\varepsilon<a_n<a+\varepsilon$$
 我们称关于 $a$ 对称的开区间 $\left(a-\varepsilon,a+\varepsilon\right)$ 为 $a$ 的 $\varepsilon$ 邻域。
 
 ### 定义 1.3.1
-数列$\left\{a_n\right\}$当 $n\to\infty$ 时收敛于实数 $a$ 是指：对于任意的 $\varepsilon>0$，总存在 $N\in{N^\ast}$，使得此数列中除有限多项$a_1,a_2,\dots,a_N$可能是例外，其它的项均落在 $a$ 的 $\varepsilon$ 邻域内。
+数列 $\left\{a_n\right\}$ 当 $n\to\infty$ 时收敛于实数 $a$ 是指：对于任意的 $\varepsilon>0$，总存在 $N\in{N^\ast}$，使得此数列中除有限多项 $a_1,a_2,\dots,a_N$ 可能是例外，其它的项均落在 $a$ 的 $\varepsilon$ 邻域内。
 
 ### 定理 1.3.1
-如果数列$\left\{a_n\right\}$收敛，则它只有一个极限。即**收敛数列的极限是唯一的**。
+如果数列 $\left\{a_n\right\}$ 收敛，则它只有一个极限。即**收敛数列的极限是唯一的**。
 
 证明：采用反证法。
 
-假设收敛数列$\left\{a_n\right\}$有两个不同极限 $a$ 和 $b$，且 $a<b$，令 $\varepsilon=\dfrac{b-a}{2}$。对于这个 $\varepsilon>0$，必有 $N_1\in{N_\ast}$，当 $n>N_1$ 时一切 $\left\{a_n\right\}$均在 $b$ 的 $\varepsilon$ 邻域内；同时又有 $N_2\in{N^\ast}$，当 $n>N_2$ 时一切 $a_n$ 均在 $a$ 的 $\varepsilon$ 邻域内。因此，当$n>max\left\{N_1,N_2\right\}$时，一切$\left\{a_n\right\}$都必须同时在这两个开区间内，但因这两个开区间没有公共点，这就产生了矛盾。所以，只能有 $a=b$。
+假设收敛数列 $\left\{a_n\right\}$ 有两个不同极限 $a$ 和 $b$，且 $a<b$，令 $\varepsilon=\dfrac{b-a}{2}$。对于这个 $\varepsilon>0$，必有 $N_1\in{N_\ast}$，当 $n>N_1$ 时一切 $\left\{a_n\right\}$ 均在 $b$ 的 $\varepsilon$ 邻域内；同时又有 $N_2\in{N^\ast}$，当 $n>N_2$ 时一切 $a_n$ 均在 $a$ 的 $\varepsilon$ 邻域内。因此，当 $n>max\left\{N_1,N_2\right\}$ 时，一切 $\left\{a_n\right\}$ 都必须同时在这两个开区间内，但因这两个开区间没有公共点，这就产生了矛盾。所以，只能有 $a=b$。
 
 证毕。
 
@@ -126,10 +126,10 @@ $$a-\varepsilon<a_n<a+\varepsilon$$
 
 ## 单调数列
 ### 定理 1.5.1（单调有界原理）
-单调且有界的数列一定有极限(收敛)：
-1. 若数列$\left\{x_n\right\}$递增且有上界，则
+单调且有界的数列一定有极限 (收敛)：
+1. 若数列 $\left\{x_n\right\}$ 递增且有上界，则
 $${\lim_{n\to\infty}x_n}=\sup\left(x_n\right)$$
-2. 若数列$\left\{x_n\right\}$递减且有下界，则
+2. 若数列 $\left\{x_n\right\}$ 递减且有下界，则
 $${\lim_{n\to\infty}x_n}=\inf\left(x_n\right)$$
 
 ---
@@ -137,7 +137,7 @@ $${\lim_{n\to\infty}x_n}=\inf\left(x_n\right)$$
 若题目中给出**递推公式**，则考虑单调有界原理。
 
 #### 例题
-设 $x_1=10$，$x_{n+1}=\sqrt{6+x_n}$。证明：$\left\{x_n\right\}$极限存在并求 ${\lim_{x\to\infty}x_n}$。
+设 $x_1=10$，$x_{n+1}=\sqrt{6+x_n}$。证明：$\left\{x_n\right\}$ 极限存在并求 ${\lim_{x\to\infty}x_n}$。
 
 $$x_{n+1}-x_n=\sqrt{6+x_n}-x_n=\dfrac{6+x_n-{x_n}^2}{\sqrt{6+x_n}+x_n}=\dfrac{-\left(x_n-2\right)\left(x_m-3\right)}{\sqrt{6+x_n}+x_n}$$
 
@@ -148,11 +148,11 @@ $$x_2=4>3$$
 
 设 $x_k>3$。（若 $x_{k+1}>3$，则 $x_n>3$）
 $$x_{k+1}=\sqrt{6+x_k}>\sqrt{6+3}=3$$
-由**数学归纳法**可知，$x_n>3$，即$\left\{x_n\right\}$有下界 $3$。
+由**数学归纳法**可知，$x_n>3$，即 $\left\{x_n\right\}$ 有下界 $3$。
 
-因此$x_{n+1}-x_n<0$，说明$\left\{x_n\right\}$单调递减。
+因此 $x_{n+1}-x_n<0$，说明 $\left\{x_n\right\}$ 单调递减。
 
-由单调有界原理，可知$\left\{x_n\right\}$极限存在。
+由单调有界原理，可知 $\left\{x_n\right\}$ 极限存在。
 
 令 ${\lim_{n\to\infty}x_n=a}$，则 ${\lim_{n\to\infty}x_{n+1}=a}$。
 $${\lim_{n\to\infty}x_{n+1}}=\sqrt{6+{\lim_{n\to\infty}x_n}}$$
@@ -171,7 +171,7 @@ $$a=\sqrt{6+a}$$
 
 ### 定理 1.5.2（闭区间套定理）
 
-设$I_n=\left[a_n,b_n\right](n\in{N^\ast})$，并且$I_1\supset I_2\supset I_3\supset \dots \supset I_n\supset I_{n+1}\supset \dots$。如果这一列区间的长度$\lvert I_n \rvert =b_n-a_n(n\to \infty)$，那么交集$\cap^{\infty}_{n=1}I_n$含有唯一的一点。
+设 $I_n=\left[a_n,b_n\right](n\in{N^\ast})$，并且 $I_1\supset I_2\supset I_3\supset \dots \supset I_n\supset I_{n+1}\supset \dots$。如果这一列区间的长度 $\lvert I_n \rvert =b_n-a_n(n\to \infty)$，那么交集 $\cap^{\infty}_{n=1}I_n$ 含有唯一的一点。
 
 ## 自然对数的底数 e
 $$\lim_{n\to\infty}\left(1+\dfrac{1}{n}\right)^n=e$$
@@ -179,9 +179,9 @@ $$\lim_{n\to\infty}\left(1+\dfrac{1}{1!}+\dfrac{1}{2!}+\cdots+\dfrac{1}{n!}\righ
 
 ## 基本列和 Cauchy 收敛原理
 ### 定义 1.7.1
-设$a_n$是一实数列，对任意给定的 $\varepsilon>0$，若存在 $N\in{N^\ast}$，使得当 $m,n\in{N^\ast}$ 时，有
+设 $a_n$ 是一实数列，对任意给定的 $\varepsilon>0$，若存在 $N\in{N^\ast}$，使得当 $m,n\in{N^\ast}$ 时，有
 $$\lvert a_m-a_n\rvert<\varepsilon$$
-则称数列$a_n$是一个基本列或 Cauchy 列。
+则称数列 $a_n$ 是一个基本列或 Cauchy 列。
 
 ## 上确界和下确界
 
