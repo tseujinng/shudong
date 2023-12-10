@@ -1,0 +1,24 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+import type { CollectionEntry } from "astro:content"
+import FormattedDate from "../components/FormattedDate.astro"
+import { SITE_TITLE } from "../consts.ts"
+
+type Props = CollectionEntry<"blog">["data"]
+
+const { frontmatter } = Astro.props
+---
+
+<BaseLayout title={frontmatter.title + " | " + SITE_TITLE} description={frontmatter.description}>
+    <article title={frontmatter.title}>
+        <div class="title text-center">
+            <h1 class="mb-4 text-4xl font-bold">{frontmatter.title}</h1>
+            <time><FormattedDate date={frontmatter.pubDate} /></time> - <time
+                ><FormattedDate date={frontmatter.updatedDate} /></time
+            >
+            <p>状态：{frontmatter.status}</p>
+            <hr />
+        </div>
+        <slot />
+    </article>
+</BaseLayout>

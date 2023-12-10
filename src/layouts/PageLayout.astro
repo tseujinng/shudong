@@ -1,0 +1,16 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+import { SITE_TITLE } from "../consts.ts"
+
+const title = "CHANGELOG"
+const Title = title + " | " + SITE_TITLE
+---
+
+<BaseLayout title={Title}>
+    <article title={title}>
+        <div class="title text-center">
+            <h1 class="mb-4 text-4xl font-bold">{title}</h1>
+        </div>
+        <slot />
+    </article>
+</BaseLayout>

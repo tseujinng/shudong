@@ -1,0 +1,20 @@
+---
+import HeaderLink from "./HeaderLink.astro"
+import { SITE_TITLE } from "../consts"
+---
+
+<header class="mx-2 my-4 font-bold">
+    <nav class="flex flex-col md:flex-row md:items-end md:space-x-4">
+        <a href="/" class="text-4xl" data-astro-prefetch>{SITE_TITLE}</a>
+        <div class="mt-2 flex flex-row">
+            <HeaderLink href="/blog" class="mr-4 text-xl hover:underline md:mx-4" data-astro-prefetch>博客</HeaderLink>
+            <HeaderLink href="/CHANGELOG" class="mr-4 text-xl hover:underline md:mx-4">CHANGELOG</HeaderLink>
+        </div>
+        <style>
+            a.active {
+                font-weight: bolder;
+                text-decoration: underline;
+            }
+        </style>
+    </nav>
+</header>

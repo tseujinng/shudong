@@ -1,0 +1,43 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_DESCRIPTION_LONG } from "../consts"
+import { getCollection } from "astro:content"
+import FormattedDate from "../components/FormattedDate.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
+import Pagefind from "../components/Pagefind.astro"
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+const latestPosts = posts.slice(0, 1)
+---
+
+<BaseLayout title={SITE_TITLE + "——" + SITE_DESCRIPTION} description={SITE_DESCRIPTION_LONG}>
+    <Pagefind />
+    <h1>👋你好，我是「周鲸鱼 / Tseu Jinng」。</h1>
+    <p>我现在是一名学生，喜欢「水彩 / 钢笔 / 编程」，目前在学习「数学」。</p>
+    <img src="/tesujinng.webp" alt="连👨‍🎓理" class="rounded" width="1920" height="1000" />
+    <section class="mt-4 rounded border-2 border-yellow-900">
+        <div class="p-4">
+            <h2 class="text-4xl">最新动态</h2>
+            <section class="my-4">
+                <h3 class="text-2xl">文章</h3>
+                <ul>
+                    {
+                        latestPosts.map((post) => (
+                            <li>
+                                <a href={`/blog/${post.slug}/`} data-astro-prefetch>
+                                    <p class="text-2xl">{post.data.title}</p>
+                                    <p class="date">
+                                        <FormattedDate date={post.data.pubDate} />
+                                    </p>
+                                </a>
+                            </li>
+                        ))
+                    }
+                </ul>
+            </section>
+            <section class="my-4">
+                <h3 class="text-2xl">画作</h3>
+                <img src="/latest.webp" alt="最新的一幅画" class="rounded" width="1751" height="1092" />
+            </section>
+        </div>
+    </section>
+</BaseLayout>

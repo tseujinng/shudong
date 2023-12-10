@@ -1,0 +1,20 @@
+---
+const today = new Date()
+---
+
+<footer class="mt-8">
+    <aside class="text-center">
+        <p>
+            &copy; 2021-{today.getFullYear()}「
+            <a href="https://jinng.org"> 鲸鱼的树洞</a>
+             」<br />保留所有权利
+        </p>
+        <p>
+            由
+            <a href="https://astro.build">Astro</a> &
+            <a href="https://tailwindcss.com/">Tailwind CSS</a>
+             驱动
+        </p>
+        <p>构建于 {today.toISOString()}</p>
+    </aside>
+</footer>
