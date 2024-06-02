@@ -1,0 +1,22 @@
+{
+  "name": "shudong",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/rss": "^4.0.6",
+    "@astrojs/sitemap": "^3.1.5",
+    "astro": "^4.9.1",
+    "katex": "^0.16.10",
+    "rehype-katex": "^7.0.0",
+    "remark-math": "^6.0.0",
+    "typescript": "^5.4.5"
+  }
+}

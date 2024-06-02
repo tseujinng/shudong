@@ -1,0 +1,9 @@
+---
+import FormattedDate from './FormattedDate.astro';
+const today = new Date();
+---
+
+<footer>
+	&copy; {today.getFullYear()} Tseu Jinng. All rights reserved.
+	<p>构建日期：<FormattedDate date={today} /></p>
+</footer>
